@@ -1,0 +1,428 @@
+
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+
+}
+
+h1,h2{
+
+    font-family: "Poppins", system-ui;
+
+}
+
+
+
+/* Special classes  */
+.nav-mobile{
+
+    display: none;
+
+}
+
+.hero-mobile {
+
+    display: none !important;
+
+}
+
+
+
+/* utility classes */
+.flex{
+
+    display: flex;
+
+}
+
+.container{
+
+    margin-inline: 80px;
+    overflow: hidden;
+
+}
+
+
+
+/* root classes */
+:root{
+
+
+}
+
+
+
+
+/* styling for header start */
+
+/* styling for nav start */
+nav{
+
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    padding-inline: 80px;
+    box-shadow: 1px 0px 10px 1px rgba(255, 255, 255, 0.308);
+
+}
+
+.nav-text ul{
+
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.nav-text ul a{
+
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    
+}
+
+.nav-text ul a::before{
+
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: green
+    color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+
+}
+
+.nav-text ul a:hover::before{
+
+    width: 100%;
+
+}
+
+.nav-button{
+
+    border: 1px solid black;
+    background: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.nav-button:hover{
+
+    color: white;
+    background-color: black;
+    cursor: pointer;
+
+}
+
+/* styling for hero section start */
+.hero{
+
+    justify-content: space-between;
+    height: 500px;
+    margin-top: 100px;
+    padding-top: 70px;
+
+}
+
+.hero-text{
+
+    flex-basis: 40%;
+
+
+}
+
+.hero-text h1{
+
+    font-size: 3rem;
+    line-height: 4rem;
+
+
+}
+
+.hero-text p{
+
+    margin-block: 30px;
+    line-height: 1.7rem;
+
+
+}
+
+.hero-button{
+
+    border: 1px solid black;
+    background: black;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+    font-size: 1rem;
+
+}
+
+.hero-button:hover{
+
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+
+}
+
+.hero-img{
+
+    flex-basis: 50%;
+
+}
+
+.hero-img img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+/* styling for companies section start */
+.companies ul{
+
+    list-style: none;
+    justify-content: space-between;
+    margin-block: 60px;
+    flex-wrap: wrap;
+
+}
+
+
+/* styling for footer start */
+footer{
+
+    background-color: black;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    padding: 40px;
+    padding-bottom: 30px;
+    margin-top: 80px;
+
+}
+
+.footer-header{
+
+    justify-content: space-between;
+
+}
+
+.footer-links ul{
+
+    gap: 20px;
+    list-style: none;
+    
+}
+
+.footer-links ul a{
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+.footer-links ul a::before{
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+
+}
+
+.footer-links ul a:hover::before{
+
+    width: 100%;
+
+}
+
+.footer-icons{
+
+    gap: 15px;
+
+}
+
+.footer-icon{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: black;
+    transition: 0.3s ease;
+
+}
+
+.footer-icon:hover{
+
+    background-color: green;
+    cursor: pointer;
+}
+
+.footer-mid{
+
+    justify-content:space-between ;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.footer-mid-left h3{
+
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+
+}
+
+.footer-mid-left h3 span{
+
+    background-color: var(--green);
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.footer-mid-left p{
+
+    color: white;
+    margin-block: 15px;
+
+}
+
+.footer-mid-left a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer-mid-right{
+
+    padding: 80px 50px;
+    border-radius: 30px;
+    background-color: rgb(41,42,50);
+    gap: 20px;
+
+}
+
+
+.footer-mid-right input{
+
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 20px;
+    color: white;
+    width: 250px;
+    font-size: 0.95rem;
+
+}
+
+.footer-mid-right input::placeholder{
+
+    color: #5e636a;
+
+}
+
+.footer-button{
+
+    background-color: green;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.footer-button i{
+
+    transition: 0.3s;
+    color: white;
+
+}
+
+.footer-button:hover.footer-button i{
+
+    transform: translate(10px);
+ 
+}
+.abc{
+    color: white;
+}
+
+.footer-bottom-right{
+
+    border-top: 1px solid white;
+    color: white;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 40px;
+    line-height: 1.5rem;
+    font-size: 0.95rem;
+
+}
+
+.footer-bottom-right a{ 
+
+    color: white;
+}
+
+.footer-bottom-right a:hover{ 
+
+    color: green;
+}
+
+.footer-bottom-right-two p{
+
+    text-align: center;
+
+}
+/* 
+########medi queries############## */
+@media (max-width:800px){
+    .flex{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    .nav-button{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+}
+
+
